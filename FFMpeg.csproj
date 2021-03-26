@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Authors>Banko Viktor S.</Authors>
+    <Product>FFMpeg CSharp Wrapper</Product>
+    <Description>FFMpeg CSharp Wrapper</Description>
+  </PropertyGroup>
+
+</Project>
