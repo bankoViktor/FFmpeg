@@ -250,6 +250,8 @@ namespace FFmpeg
         {
             Execute(inputFile, outputFile, argsBuilder => argsBuilder
                 .RewriteIfExists()
+                .HideBunner()
+                .LogLevel("level")
                 .InputConfigure(input =>
                 {
                     input.SetPosition(position.TotalSeconds);
