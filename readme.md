@@ -12,7 +12,9 @@ This application requires at least:
 1. Initialize
 	
 ```C#
-FFMpegWrapper.Initialization(@"D:\ffmpeg")
+
+FFmpegWrapper.Initialization(@"D:\ffmpeg")
+
 ```
 
 2. Run
@@ -21,7 +23,7 @@ FFMpegWrapper.Initialization(@"D:\ffmpeg")
 
 var progress = new Progress<double>(v => Console.WriteLine("{0,8:F1}%", v));
 
-FFMpegWrapper.Execute(in_file, out_file, progress, argsBuilder =>
+FFmegWrapper.Execute(in_file, out_file, progress, argsBuilder =>
 {
 	argsBuilder.LogLevel("level");
 	argsBuilder.HideBunner();
@@ -32,6 +34,7 @@ FFMpegWrapper.Execute(in_file, out_file, progress, argsBuilder =>
 		outputconfigurator.SetFramerate(25);
 	});
 });
+
 ```
 	
 3. Profit
@@ -46,4 +49,6 @@ FFMpegWrapper.Execute(in_file, out_file, progress, argsBuilder =>
 
 ## Acknowledgments
 
-* [FFmpeg-Builds](https://github.com/BtbN/FFmpeg-Builds)
+* [FFmpeg-Builds](https://github.com/BtbN/FFmpeg-Builds) - Builds for downloading
+* [FFmpeg Documentation](https://ffmpeg.org/ffmpeg.html) 
+* [FFprobe Documentation](https://ffmpeg.org/ffprobe.html) 
