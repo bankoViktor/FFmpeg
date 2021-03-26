@@ -60,7 +60,7 @@ namespace FFmpeg
         /// Установливает частоту кадров (значение в Гц, дробь).
         /// </summary>
         /// <param name="framerate">Частота кадров</param>
-        public FFmpegArgumentsBaseBuilder SetFramerate(double framerate)
+        public FFmpegArgumentsBaseBuilder Framerate(double framerate)
         {
             if (framerate < 1)
                 throw new ArgumentOutOfRangeException(nameof(framerate));
