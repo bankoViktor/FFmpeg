@@ -5,18 +5,17 @@ This CSharp wrapper for FFmpeg.
 ### Compatibility
 
 This application requires at least:
-* Windows
 * .Net Core 3.1 or above
 
 ## Usage
 
-	1. Initialize
+1. Initialize
 	
 ```C#
 FFMpegWrapper.Initialization(@"D:\ffmpeg")
 ```
 
-	2. Run
+2. Run
 	
 ```C#
 
@@ -35,7 +34,7 @@ FFMpegWrapper.Execute(in_file, out_file, progress, argsBuilder =>
 });
 ```
 	
-	3. Profit
+3. Profit
 
 ## Authors
 
