@@ -31,9 +31,9 @@ namespace FFmpeg
         }
 
         // input/output
-        public FFmpegArgumentsBaseBuilder SetPosition(double position)
+        public FFmpegArgumentsBaseBuilder Position(TimeSpan position)
         {
-            if (position < 0)
+            if (position.TotalSeconds < 0)
                 throw new ArgumentOutOfRangeException(nameof(position));
 
             _parameters["ss"] = position.ToString();

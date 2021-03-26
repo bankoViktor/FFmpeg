@@ -254,7 +254,7 @@ namespace FFmpeg
                 .LogLevel("level")
                 .InputConfigure(input =>
                 {
-                    input.SetPosition(position.TotalSeconds);
+                    input.Position(position);
                 })
                 .OutputConfigure(output =>
                 {
